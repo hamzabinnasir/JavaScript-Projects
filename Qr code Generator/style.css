@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #222;
+}
+
+/* Card */
+.card {
+    width: 400px;
+    background-color: #ffff;
+    border-radius: 15px;
+    padding: 40px 20px;
+    max-width: 100%;
+}
+
+/* Input */
+.card input {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px 22px;
+    border-radius: 5px;
+    border: 1px solid #222;
+    outline: none;
+}
+
+
+/* Qr Code */
+.qrCode{
+    max-height: 0;
+    transition: max-height 1s;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.qrCode img{
+    width: 100%;
+}
+.qrCode.showImg{
+    max-height: 300px;
+    width: 200px;
+    border: 1px solid #d1d1d1;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Button */
+.card button {
+    width: 100%;
+    padding: 14px 22px;
+    background-color: blue;
+    border-radius: 5px;
+    color: #ffff;
+    border: none;
+    margin-top: 20px;
+    border: 1px solid #ffff;
+    outline: none;
+}
+
+.card button:hover {
+    background-color: #ffff;
+    border: 1px solid blue;
+    color: #222;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

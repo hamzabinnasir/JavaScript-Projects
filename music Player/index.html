@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6a0f85f060.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <ul>
+                <li><i class="fa-solid fa-angle-left"></i></li>
+                <li><i class="fa-solid fa-bars"></i></li>
+            </ul>
+            <img src="media/468-thumbnail.png" alt="no img">
+            <h1>Despacito</h1>
+            <p>Luis Fonsi Ft. Puerto Rican</p>
+
+            <!-- Audio -->
+            <audio id="myAudio">
+                <!-- mpeg mp3 ki file type hai -->
+                <source src="media/NEFFEX - Fight Back.mp3" type="audio/mpeg">
+            </audio>
+            <!-- Input -->
+            <input id="progress" type="range" value="0">
+            <!-- ICON SECTION -->
+            <div class="icons">
+                <i id="forward" class="fa-solid fa-forward"></i>
+                <i id="play" class="fa-sharp fa-solid fa-circle-play"></i>
+                <i id="backward" class="fa-solid fa-backward"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js">
+
+</script>
+
+</html>

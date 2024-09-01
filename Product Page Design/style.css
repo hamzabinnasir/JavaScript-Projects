@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+/* CONTAINER */
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d0eaff;
+}
+
+/* ITEM */
+.item{
+    height: 470px;
+    width: 340px;
+}
+
+/* ITEM1 */
+#item1{
+    background: #333;
+    transform: scale(1.1);
+    position: relative;
+}
+
+#item1 img{
+    width: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+}
+
+/* RADIO BUTTONS */
+.radioBtn{
+    position: absolute;
+    bottom: 32px;
+    right: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.circle{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #ffff;
+    margin: 6px 0px;
+    cursor: pointer;
+}
+
+.active{
+    background: blue;
+}
+
+/* ITEM2 */
+#item2{
+    margin-left: 19px;
+    background: #ffff;
+    padding: 30px 30px;
+    box-shadow: 0 5px 10px 0 rgba(0, 25, 125, 0.32);
+}
+
+#item2 h1{
+    font-size: 35px;
+    color: #222;
+}
+
+#item2 h2{
+    margin-top: 10px;
+    font-size: 30px;
+    color: #555;
+}
+
+#item2 h3{
+    margin-top: 6px;
+    color: #00d874;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#mention {
+    margin-top: 32px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* SIZE */
+.sizeSelect{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.sizeLabels{
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.sizeLabels span{
+    padding: 0px 5px;
+    color: #777;
+    padding: 0 7px;
+    cursor: pointer;
+}
+
+.sizeLabels input:checked + span{
+    color: blue;
+    font-weight: 600;
+}
+
+.sizeLabels input{
+    display: none;
+}
+
+/* COLORS */
+.color{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.colorSelect{
+    margin-left: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.colorSelect input{
+    display: none;
+}
+
+.colorSelect input:checked + span{
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff , 0 0 0 6px #000;
+}
+
+.colorSelect span{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.pink{
+    background-color: pink;
+}
+
+/* QUANTITY */
+.quantity{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.quantity input{
+    margin-left: 18px;
+    width: 50px;
+    padding: 3px 3px 3px 15px;
+    outline: none;
+    background: #eee;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* BUY BUTTON */
+#buyBtn{
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px 0px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(68, 68, 170);
+    border: 1px solid rgb(68, 68, 170);
+    color: #ffff;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 5px 10px 0 rgba(0, 25, 125, 0.22);
+}
+
+#buyBtn:hover{
+    background-color: #ffff;
+    border: 1px solid rgb(68, 68, 170);
+    color: #222;
+}

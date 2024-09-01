@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+
+/* BPDY SECTION */
+body{
+    background-color: #222;
+}
+
+
+
+/* CONTAINER SECTION */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+
+/* CARD SECTION */
+.card{
+    width: 450px;
+    max-width: 470px;
+    /* height: 600px; */
+    border-radius: 20px;
+    background: linear-gradient(135deg , #00feba , #5b548a);
+    /* background: linear-gradient(#574BCD , #2999AD , #41E975); */
+}
+
+
+
+/* SEARCH SECTION */
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 30px;
+}
+
+.search input{
+    height: 40px;
+    width: 320px;
+    border-radius: 100px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+}
+
+
+.search button{
+    border: 0;
+    outline: 0;
+    background-color: #ffff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+   
+}
+
+.search img{
+    width: 15px;
+}
+
+
+
+/* WEATHER SECTION */
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+}
+
+.weather img{
+   width: 170px;
+}
+
+.tem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tem h1{
+    font-size: 70px;
+}
+
+.tem h2{
+    font-size: 35px;
+}
+
+
+
+/* Details Section */
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 12px 34px;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+
+
+.cols{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cols img{
+    width: 40px;
+    margin-right: 20px;
+}
+
+.cols p{
+    font-size: 20px;
+}
+
+
+/* Display Block */
+.parent{
+    display: none;
+}
+
+/* Eroor */
+.error{
+    display: none;
+}
+.error p{
+    color: #ffff;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}

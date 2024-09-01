@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container */
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gallery */
+.gallery {
+    width: 900px;
+    overflow-x: scroll;
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.imgs{
+    display: flex;
+    width: 100%;
+    grid-gap: 20px;
+    padding: 20px 0px;
+    /* margin: 0px 12px; */
+}
+
+.gallery img {
+    width: 285px;
+    transition: transform 0.5s;
+    filter: grayscale(100%);
+}
+
+.galleryBox {
+    display: flex;
+    align-items: center;
+}
+
+#back , #next{
+    margin: 0px 32px;
+    width: 65px;
+    cursor: pointer;
+}
+
+.gallery img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+}

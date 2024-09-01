@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container Section */
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#402662, #3900a6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Section */
+.card {
+    width: 80%;
+    max-width: 100%;
+}
+
+.item {
+    margin: 23px 0px;
+}
+
+/* Heading */
+.heading h1{
+    margin: 12px 0px;
+    font-size: 40px;
+}
+
+#h1{
+    color: #ffff;
+}
+
+#h2 span{
+    color: #00b3cc;
+    border-bottom: 4px solid #00b3cc;
+    padding: 4px 0px;
+}
+
+/* Search */
+.search {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 3px;
+    padding: 0px 12px;
+}
+
+.search button{
+    background-color: #ffff;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.search img {
+    width: 25px;
+}
+
+.search input {
+    width: 100%;
+    padding: 18px 12px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+/* Password Button */
+.button {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    padding: 4px 13px;
+    background-color: #00b3cc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.button img {
+    width: 15px;
+}
+
+#passwordBtn {
+    padding: 12px 7px;
+    background-color: #00b3cc;
+    border: none;
+    color: #ffff;
+    font-weight: bold;
+    cursor: pointer;
+}

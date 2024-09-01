@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container */
+.container {
+    height: 100vh;
+    width: 100%;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input Box */
+.inputBox {
+    width: 400px;
+    border: 1px solid #ffff;
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+    border-radius: 5px;
+}
+
+#searchBox {
+    border: none;
+    padding: 18px;
+    width: 100%;
+    background-color: #222;
+    outline: none;
+    color: #ffff;
+}
+
+#searchBox::-ms-reveal {
+    display: none;
+}
+
+#arrow {
+    width: 37px;
+    cursor: pointer;
+}
+
+
+/* MESSAGE TO BE DISPLAYED */
+.para {
+    width: 400px;
+    margin-top: 6px;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    display: none;
+}

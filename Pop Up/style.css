@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container */
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#402662, #3900a6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Submit Button */
+#submit {
+    background-color: #ffff;
+    border: none;
+    padding: 12px 52px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+}
+
+/* Card  */
+.card {
+    max-width: 100%;
+    width: 340px;
+    border-radius: 5px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* center main krne k liay */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0px 30px;
+    transform: translate(-50% , -50%) scale(0.1);
+    transition: transform 0.4s , top 0.4s;
+    visibility: hidden;
+}
+
+/* Opem Popup */
+.open-popup {
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.card img {
+    width: 80px;
+    margin-top: -45px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.card h1 {
+    margin-top: 20px;
+    color: #222;
+}
+
+.card p {
+    text-align: center;
+    margin-top: 30px;
+    color: #222;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 3px;
+    margin: 35px;
+    background-color: #6fd649;
+    border: none;
+    color: #ffff;
+    cursor: pointer;
+    border: 1px solid #6fd649;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.card button:hover {
+    background-color: #ffff;
+    color: #222;
+    border: 1px solid #6fd649;
+}

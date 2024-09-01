@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container Section */
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#737dfe, #ffcac9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Item section */
+.item {
+    width: 80%;
+    height: 500px;
+}
+
+/* Heading  */
+.item h1 {
+    display: flex;
+    align-items: center;
+}
+
+.item h1 img {
+    width: 50px;
+}
+
+.item h1 {
+    color: #ffff;
+}
+
+/* Edit Button */
+#editBtn {
+    background: linear-gradient(#402662, #3900a6);
+    display: flex;
+    color: #ffff;
+    align-items: center;
+    border-radius: 30px;
+    padding: 12px 22px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+
+#editBtn img {
+    width: 23px;
+}
+
+/* Notes Para */
+.deletePara {
+    background-color: #ffff;
+    width: 400px;
+    height: 160px;
+    max-width: 100%;
+    border-radius: 5px;
+    position: relative;
+    padding: 12px 12px;
+    outline: none;
+    margin: 20px 0px;
+}
+
+/* delete button */
+.deleteBtn {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    cursor: pointer;
+    width: 25px;
+    margin: 8px;
+}

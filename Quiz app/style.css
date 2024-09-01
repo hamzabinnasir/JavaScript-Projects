@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* CONTAINER SECTION */
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#FF0076, #590FB7);
+    /* background: linear-gradient(#0B63F6 , #003CC5); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD SECTION */
+.card {
+    /* height: 400px; */
+    width: 520px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 25px 30px;
+}
+
+
+/*Quiz Headings Section  */
+.quiz h1 {
+    border-bottom: 1px solid #222;
+    padding-bottom: 20px;
+    font-size: 25px;
+    /* color: #590FB7; */
+    color: #34086e;
+
+}
+
+.myquestion h2 {
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: #34086e;
+    padding-top: 20px;
+}
+
+
+
+/* Answer Section */
+.answer {
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.ans-btn {
+    margin: 8px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #222;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.ans-btn:hover:not([disabled]) {
+    background-color: #222;
+    color: white;
+    transition: all 0.2s;
+}
+
+.ans-btn:disabled {
+    cursor: no-drop
+}
+
+
+
+/* Next Button Section */
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display block k uper text align center kam nahin karta */
+    /* text-align: center; */
+}
+
+
+
+#next-btn {
+    margin-top: 15px;
+    padding: 6px 40px;
+    background-color: #590FB7;
+    border: 2px solid #590FB7;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    /* visibility: hidden; */
+}
+
+
+/* JACA SCRIPT STYLING */
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.incorrect {
+    background-color: red;
+    color: white;
+}

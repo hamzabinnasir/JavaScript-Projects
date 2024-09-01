@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3fbff;
+}
+
+/* WE CAN REMOVE BACGROUND IMAGE FROM Remove bg (bacground) WEBSITE */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background: url(images/background.png);
+    position: relative;
+    overflow: hidden;
+}
+
+#transparent {
+    width: 100%;
+}
+
+/* WE WILL SET ITS WIDTH IN JAVA SCRIPT */
+/* #original{
+    width: 100%;
+} */
+.originalImg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    overflow: hidden;
+}
+
+#line{
+    width: 1px;
+    height: 100%;
+    cursor: ew-resize;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background: #fff;
+}
+
+.arrow{
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+}

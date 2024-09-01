@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #333;
+    --orengeredColor : #333;
+    --btnBg : orangered;
+}
+
+/* CSS Changing */
+.darkTheme {
+    --primary-color: black;
+    --secondary-color: #ffff;
+    --orengeredColor : orangered;
+    --btnBg : #333;
+}
+
+/* Container */
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+    padding: 20px 80px;
+}
+
+/* Navbr */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+#mode {
+    width: 30px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 12px 3px;
+}
+
+.navbar ul li a {
+    padding: 8px 12px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar ul li a:hover {
+    color: #ff4321;
+}
+
+/* Content */
+.content {
+    margin-top: 170px;
+    width: 45%;
+}
+
+.content h1 {
+    font-size: 50px;
+    color: var(--secondary-color);
+}
+
+.content p {
+    margin-top: 30px;
+    color: var(--secondary-color);
+}
+
+
+#download {
+    margin-top: 30px;
+    background-color: var(--orengeredColor);
+    border: none;
+    color: #ffff;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#download:hover {
+    background-color: var(--btnBg);
+    color: #ffff;
+}
+
+.content span {
+    color: orangered;
+}
+
+/* Image Box */
+.imgBox {
+    height: 80%;
+    width: 40%;
+    position: absolute;
+    bottom: 0px;
+    right: 80px;
+}
+
+.imgBox img {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#pattern {
+    transition: bottom 1s;
+}
+
+.imgBox:hover #pattern {
+    bottom: 40px;
+}
+
+#girl {
+    transition: left 1s;
+}
+
+.imgBox:hover #girl {
+    left: 60%;
+}
+
+/* Icons */
+.icons {
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.icons i {
+    font-size: 25px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.icons i:hover {
+    color: #ff4321;
+}

@@ -1,0 +1,24 @@
+.card{
+    height: 500px;
+    width: 350px;
+}
+
+.card input{
+    width: 220px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 12px;
+    
+}
+
+.cols p{
+    font-size: 16px;
+}
+
+.cols img{
+    width: 40px;
+}

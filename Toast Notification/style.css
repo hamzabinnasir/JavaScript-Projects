@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container */
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: #f7edff;
+    padding: 40px 40px;
+}
+
+/* Buttons */
+.container button {
+    height: 35px;
+    width: 120px;
+    background: #333;
+    color: #ffff;
+    border: none;
+    margin: 0px 4px;
+    cursor: pointer;
+}
+
+/* Toast Box */
+.toastBox {
+    width: 370px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    overflow: hidden;
+}
+
+.items {
+    height: 70px;
+    width: 100%;
+    margin: 25px 0px;
+    background: #ffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    transform: translateX(100%);
+    animation: moveleft 0.5s linear forwards;
+    position: relative;
+}
+
+@keyframes moveleft {
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* CSS CHANGING */
+.items i{
+    font-size: 35px;
+    margin-right: 12px;
+    color: green;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 5px 10px 0 rgba(0 , 25 , 125 , 0.22);
+    border-radius: 50%;
+}
+
+/* ERROR */
+.items.error::after{
+    background-color: red;
+}
+
+.items.error i{
+    color: red;
+}
+
+/* INVALID */
+.items.invalid::after{
+    background-color: orange;
+}
+
+.items.invalid i{
+    color: orange;
+}
+
+/* Animation */
+.items::after{
+    background-color: green;
+    content: "";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    animation: anim 5s linear forwards;
+}
+
+@keyframes anim{
+    100%{
+        width: 0;
+    }
+}
